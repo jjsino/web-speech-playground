@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Ghost chasing</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <h1>Ghost chasing</h1>
+    <div style="text-align: center;">
+      <audio controls autoplay oncanplaythrough="audioLoaded()" onplaying="audioPlaying()" onended="startRecognition()" onpause="startRecognition()">
+        <source src="sound.ogg" type="audio/ogg">
+        <source src="sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div>
+        <p class="tip"></p>
+        <p class="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
